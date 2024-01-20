@@ -52,7 +52,7 @@ app.layout = html.Div([
     dash_table.DataTable(page_size = 5,
                          id = "result_table"),
     dcc.Graph(id = "result_graph")
-], style = {"marginBottom" : 500, "marginTop" : 500})
+], style = {"marginBottom" : 50, "marginTop" : 50})
 
 @callback(
     Output("second_addr", "options"),
