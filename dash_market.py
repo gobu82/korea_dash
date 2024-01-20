@@ -19,7 +19,7 @@ def mk_graph_data(df):
     
     for idx, group in groups:
         if final_df is None:
-            final_df = group.copy()
+            final_df = group.sort_values("채용공고수", ascending = False)[:10].copy()
         elif len(group) > 10:
             final_df = pd.concat([final_df, group.sort_values("채용공고수", ascending = False)[:10]])
         else:
