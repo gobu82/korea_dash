@@ -5,9 +5,9 @@ import plotly.graph_objects as go
 from dash import Dash, dcc, html, dash_table, callback, Input, Output
 
 from matplotlib import font_manager, rc
-font_path = 'C:/Windows/Fonts/malgun.ttf'
-font_name = font_manager.FontProperties(fname = font_path).get_name()
-rc('font', family=font_name)
+# font_path = 'C:/Windows/Fonts/malgun.ttf'
+# font_name = font_manager.FontProperties(fname = font_path).get_name()
+# rc('font', family=font_name)
 
 def mk_graph_data(df):
     visual_df = pd.DataFrame(df.groupby(["주소(시도)", "카테고리", "기술스택"]).size())
