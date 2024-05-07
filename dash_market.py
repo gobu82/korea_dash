@@ -32,7 +32,7 @@ def mk_graph_data(df):
     return final_df
 
 
-csdf = pd.read_csv("시장조사_240402_csdf.csv")
+csdf = pd.read_csv("시장조사_240508_csdf.csv")
 min_year = min(csdf["최소경력"])
 max_year = max(csdf["최대경력"])
 
