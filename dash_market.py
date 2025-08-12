@@ -32,7 +32,7 @@ def mk_graph_data(df):
     return final_df
 
 
-csdf = pd.read_csv("시장조사_240706_csdf.csv")
+csdf = pd.read_csv("시장조사_250813_csdf.csv")
 min_year = min(csdf["최소경력"])
 max_year = max(csdf["최대경력"])
 
@@ -180,3 +180,4 @@ def update_graph(df):
 
 if __name__ == "__main__":
     app.run_server(debug=True, use_reloader=False, host="0.0.0.0")
+
